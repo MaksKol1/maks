@@ -1,0 +1,732 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html {
+  background: url("../img/projectback.png");
+  font-family: "Geometria", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: url("../img/projectback.png");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 880px;
+}
+
+html.active {
+  overflow-y: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo {
+  display: block;
+  margin: 22px 0 0 30px;
+}
+.navbar .lang_cont {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+.navbar .lang_cont .lang_link {
+  text-decoration: none;
+  color: #C5D5E6;
+  opacity: 0.5;
+  text-transform: uppercase;
+  padding: 0 10px 0 10px;
+  font-family: "Geometria", sans-serif;
+}
+.navbar .lang_cont .lang_link_1 {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 10px 0 10px;
+  font-family: "Geometria", sans-serif;
+}
+.navbar .authorization {
+  display: flex;
+}
+.navbar .authorization .auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .authorization .find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .authorization .autho_link {
+  text-decoration: none;
+  color: #C5D5E6;
+  margin: 24px 0 0 0;
+  padding: 0 31px 0 100px;
+  opacity: 0.5;
+  font-family: "Geometria", sans-serif;
+}
+.navbar .authorization .shape {
+  margin: 26px 0 0 0;
+}
+
+.Links_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 0 0 0;
+}
+.Links_container .urgently {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 30px;
+  background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
+  border-radius: 5px;
+}
+.Links_container .navigation_1 {
+  color: white;
+  text-decoration: none;
+  font-family: "Geometria", sans-serif;
+}
+.Links_container .navigation {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 15px 0 15px;
+  font-family: "Geometria", sans-serif;
+  opacity: 1;
+}
+.Links_container .navigation_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Links_container .navigation_links_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+.header_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -84px;
+  margin-top: 50px;
+}
+.header_container .header_text {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  margin: 0 50px 0 50px;
+}
+.header_container .header_text_1 {
+  ont-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin: 0 50px 0 50px;
+}
+
+.cyfra {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #E63554;
+  display: inline-block;
+  position: relative;
+  right: 20px;
+  bottom: 18px;
+}
+
+.Types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.Types a {
+  margin: 0 56px 0 0;
+}
+.Types .types_hr {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #C5D5E6;
+  text-decoration: none;
+  margin: 0 8px 0 0;
+}
+
+.accordeon {
+  width: 100%;
+  margin-top: 71px;
+}
+.accordeon .accord_item {
+  border-bottom: 1px solid white;
+}
+
+.accord_content {
+  display: none;
+  height: 100px;
+  width: 100%;
+}
+
+.accord_title {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.acc_ttl_img {
+  opacity: 0.2;
+}
+
+.accord_input {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.accord_input:checked + .accord_content {
+  display: block;
+}
+
+.accord_content_img {
+  display: block;
+  position: relative;
+  bottom: 100px;
+}
+
+.date {
+  position: absolute;
+  left: 456px;
+  top: 284px;
+  display: inline-block;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #C5D5E6;
+  opacity: 0.5;
+}
+
+.accord_ttl_t {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  position: relative;
+  left: 51px;
+  top: 45px;
+}
+
+.accord_content_text {
+  display: inline-block;
+  width: 600px;
+  height: 80px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  position: relative;
+  left: 456px;
+  bottom: 220px;
+}
+
+.donated {
+  display: inline-block;
+  position: relative;
+  left: -147px;
+  bottom: 190px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B4C4D8;
+}
+
+.method_container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  left: 716px;
+  bottom: 360px;
+}
+
+.method {
+  margin: 10px 0 10px 0;
+}
+
+.popup_bg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(197, 213, 230, 0.5);
+  backdrop-filter: blur(27.1828px);
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  width: 1340px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s all;
+  overflow-y: scroll;
+}
+
+.popup.active {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.popup_bg.active {
+  display: block;
+}
+
+.close_popup {
+  position: absolute;
+  left: 1510px;
+  top: 30px;
+}
+
+.support {
+  width: 60px;
+  height: 60px;
+  background: #9D5E9B;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0px 2px 16px #9D5E9B, 0px 2px 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 30px 0;
+}
+.support .sup_icon {
+  margin: 0 auto;
+  padding: 20% 0 0 0;
+  display: block;
+}
+
+.popup_ttl_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.popup_title {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+  color: #363B5D;
+}
+
+.methodspop_cont_2 {
+  display: inline-flex;
+  width: 250px;
+  height: 80px;
+  position: relative;
+  right: 100px;
+  bottom: 11px;
+  margin: 0 41px 0 137px;
+}
+
+.methodspop_cont_1 {
+  display: inline-flex;
+  width: 200px;
+  height: 80px;
+  position: relative;
+  bottom: 11px;
+  margin: 0 41px 0 137px;
+}
+
+.methodspop_cont {
+  display: inline-flex;
+  width: 220px;
+  height: 80px;
+  margin: 39px 41px 0 0;
+}
+
+.methodspop_ttl {
+  margin: 25px 0 0 20px;
+  display: inline-block;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  color: #363B5D;
+}
+
+.methodspop_ttl_2 {
+  margin: 15px 0 0 20px;
+  display: inline-block;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  color: #363B5D;
+  width: 99px;
+}
+
+.popuptext_1 {
+  width: 146px;
+  height: 210px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515572;
+  position: relative;
+  left: 240px;
+  bottom: 20px;
+}
+
+.popuptext_2 {
+  width: 146px;
+  height: 42px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515572;
+  position: relative;
+  left: 485px;
+  bottom: 218px;
+}
+
+.popuptext_3 {
+  width: 146px;
+  height: 42px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515572;
+  position: relative;
+  left: 752px;
+  bottom: 258px;
+}
+
+.popuptext_4 {
+  width: 146px;
+  height: 70px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515572;
+  position: relative;
+  left: 1055px;
+  bottom: 308px;
+}
+
+.search {
+  display: none;
+  position: absolute;
+  width: 1520px;
+  height: 60px;
+  left: 30px;
+  top: 15px;
+  background: rgba(197, 213, 230, 0.5);
+  backdrop-filter: blur(27.1828px);
+  border-radius: 10px;
+}
+
+.search.active {
+  display: block;
+}
+
+.search_body {
+  display: none;
+  position: absolute;
+  width: 1520px;
+  height: 361px;
+  left: 30px;
+  top: 95px;
+  background: rgba(197, 213, 230, 0.5);
+  backdrop-filter: blur(27.1828px);
+  border-radius: 10px;
+}
+
+.search_body.active {
+  display: block;
+}
+
+.project_container {
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.project_plot_container {
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.project {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_ttl {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0 188px 0 50px;
+}
+
+.children {
+  width: 300px;
+  height: 78px;
+  border-bottom: 1px solid white;
+}
+
+.children_ttl {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.children_text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.children_text_1 {
+  margin-top: 6px;
+  width: 300px;
+  height: 32px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.war {
+  margin-top: 20px;
+}
+
+.war_ttl {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.war_text {
+  margin-top: 15px;
+  width: 300px;
+  height: 32px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.archive_container {
+  display: flex;
+}
+
+.archive {
+  width: 339.95px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.archive_ttl {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0 188px 0 50px;
+}
+
+.archive_plot {
+  margin-top: 40px;
+  width: 300px;
+  height: 78px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 30px;
+  bottom: 400px;
+  width: 62px;
+  height: 23px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2E3F69;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.search_ttl {
+  position: absolute;
+  left: 620px;
+  bottom: 390px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.close_search {
+  cursor: pointer;
+  position: absolute;
+  bottom: 395px;
+  left: 1450px;
+}
